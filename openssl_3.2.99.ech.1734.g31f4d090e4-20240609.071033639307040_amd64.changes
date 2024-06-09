@@ -1,0 +1,54 @@
+Format: 1.8
+Date: Tue, 10 Oct 2023 16:36:40 +0200
+Source: openssl
+Binary: libcrypto3-udeb libssl-dev libssl-doc libssl3-udeb libssl3t64 libssl3t64-dbgsym openssl openssl-dbgsym
+Architecture: amd64 all
+Version: 3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040
+Distribution: testing
+Urgency: medium
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Changed-By: Jochen Sprickerhof <jspricke@debian.org>
+Description:
+ libcrypto3-udeb - Secure Sockets Layer toolkit - libcrypto udeb (udeb)
+ libssl-dev - Secure Sockets Layer toolkit - development files
+ libssl-doc - Secure Sockets Layer toolkit - development documentation
+ libssl3-udeb - ssl shared library - udeb (udeb)
+ libssl3t64 - Secure Sockets Layer toolkit - shared libraries
+ openssl    - Secure Sockets Layer toolkit - cryptographic utility
+Changes:
+ openssl (3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040) UNRELEASED; urgency=medium
+ .
+   ** SNAPSHOT build @9f532ba7fd **
+ .
+   * Add DEfO patches
+   * Fix Debian patches and symbols
+Checksums-Sha1:
+ aa42c80a0e986eaeea6b0e91db6d2e1bd30bf71d 1646860 libcrypto3-udeb_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.udeb
+ 12bb1432c096399fef578c6c3b37466cea59cca7 2795380 libssl-dev_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ 4d7871bceba9a1c74e80fd7ad7c703b001c8408a 2140472 libssl-doc_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_all.deb
+ e8aaa639955119462faa6179a8d6eed3c38649d2 385972 libssl3-udeb_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.udeb
+ 2fcfa2b6f7566e07303987861e05050278e3154b 5832588 libssl3t64-dbgsym_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ c18d9e172dd960eb6be54bdce67588018211b073 2319076 libssl3t64_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ aeed00f026eca48bad6a1833ed0190973d036823 732788 openssl-dbgsym_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ f5ef64428c01e26511b942eace7a7d7a3eb8f4ad 7838 openssl_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.buildinfo
+ 83cec7b4477ecfc463223f549e21a60d658df19a 1392488 openssl_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+Checksums-Sha256:
+ a4ca86707bf18f790c9f3cc1cc7401772590bdde0087043219906a1742d4c4b5 1646860 libcrypto3-udeb_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.udeb
+ 1e151bc603968afbb7733d29f4eec7915cae6181f91bc56907717dfdcb6b4f1e 2795380 libssl-dev_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ f82503f835b0572bcf548a9272b6bbb435d5ae6893fd7eb75f58da64d2b04046 2140472 libssl-doc_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_all.deb
+ ff006543f08514cf6118220455c6285f245c63949b0dd08946e808a547be9a5b 385972 libssl3-udeb_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.udeb
+ c432cce946a6974fb6c65d1ca316cf3a85628c1ba90d102bd1fda86f8e0c16e6 5832588 libssl3t64-dbgsym_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ 4091ce5ce2527bf0bce7a89b2828a11e9c22b64708603ba5f69453cae1c6b87a 2319076 libssl3t64_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ da6db2d719392c4db4996cf8818d59f7c87cabd030c63dbcb395f75c73679a60 732788 openssl-dbgsym_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ 9cd36447452a4f423caeeee44da29e2b6e866fb5870ed004aca5489926568c8a 7838 openssl_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.buildinfo
+ 57beb624bd687567be3135afcfc6df00225b4c7617073326cadd911674fafa27 1392488 openssl_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+Files:
+ 49df5bce99b1bf152f961a1c59fb0b04 1646860 debian-installer optional libcrypto3-udeb_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.udeb
+ ffb2fda54685d964cb05547483698b7d 2795380 libdevel optional libssl-dev_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ 14fc167c7a9838ccbfad3bc2247fbd5e 2140472 doc optional libssl-doc_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_all.deb
+ cd5f630bc71f6a04a65545eadfbb6797 385972 debian-installer optional libssl3-udeb_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.udeb
+ 972170e11f01b103cd437cb9b1ad3377 5832588 debug optional libssl3t64-dbgsym_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ 47d07de6aab4d4589b946d8453077517 2319076 libs optional libssl3t64_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ e6f04f2ce18592ac1bc405b028704313 732788 debug optional openssl-dbgsym_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
+ 4f578ffda1b0696e1e71bab911f60502 7838 utils optional openssl_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.buildinfo
+ 96754aac48e6bfd754e144b5f49da269 1392488 utils optional openssl_3.2.99.ech.1734.g31f4d090e4-20240609.071033639307040_amd64.deb
