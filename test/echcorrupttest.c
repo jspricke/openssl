@@ -7,13 +7,15 @@
  * https://www.openssl.org/source/license.html
  */
 
+#include <stdio.h>
+#ifdef DUMP
 #include <string.h>
 #include "helpers/ssltestlib.h"
 #include "testutil.h"
 #include <openssl/ech.h>
 #include <internal/ech_helpers.h>
 
-#ifndef OPENSSL_NO_ECH
+//#ifndef OPENSSL_NO_ECH
 
 # define OSSL_ECH_MAX_LINELEN 1000 /* for a sanity check */
 # define DEF_CERTS_DIR "test/certs"
@@ -99,6 +101,7 @@ typedef struct {
     int rv_expected; /* expected result */
     int err_expected; /* expected error */
 } TEST_ECHINNER;
+#endif
 
 /* a full padded, encoded inner client hello */
 static const unsigned char entire_encoded_inner[] = {
@@ -315,6 +318,7 @@ static const unsigned char short_encoded_inner[] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 
+#ifdef DUMP
 /* A set of test vectors */
 static TEST_ECHINNER test_inners[] = {
     /* 1. basic case - copy to show test code works with no change */
@@ -522,6 +526,7 @@ typedef struct {
     const unsigned char *exp_inner;
     size_t exp_innerlen;
 } TEST_RAW;
+#endif
 
 /* inner1, encoded_inner1 and outer1 are a working, matching set */
 static unsigned char inner1[] = {
@@ -822,6 +827,7 @@ static unsigned char outer3[] = {
     0x03, 0xd4
 };
 
+#ifdef DUMP
 /* struct: outer+len, encoded-inner+len, rv, dec_ok, err, inner+len */
 static TEST_RAW raw_vectors[] = {
 
@@ -1621,7 +1627,7 @@ const OPTIONS *test_get_options(void)
     };
     return test_options;
 }
-#endif
+//#endif
 
 int setup_tests(void)
 {
@@ -1694,4 +1700,33 @@ void cleanup_tests(void)
     OPENSSL_free(bin_echconfig);
     OPENSSL_free(hpke_info);
 #endif
+}
+#endif
+
+typedef struct {
+    char * name;
+    unsigned char* pointer;
+    size_t length;
+} tuple;
+
+#define TOP(arg) {#arg, arg, sizeof(arg)}
+
+int main() {
+    tuple inner[] = {
+        TOP(entire_encoded_inner),
+        TOP(no_ext_encoded_inner),
+        TOP(outer_short_encoded_inner),
+        TOP(encoded_inner_pre),
+        TOP(badsuites_inner_pre),
+        TOP(encoded_inner_post),
+        TOP(short_encoded_inner),
+        TOP(inner1),
+        TOP(encoded_inner1),
+    };
+
+    for(size_t i = 0; i < sizeof(inner) / sizeof(inner[0]); i++) {
+        FILE *fpr = fopen(inner[i].name, "wb");
+        fwrite(inner[i].pointer, inner[i].length, 1, fpr);
+        fclose(fpr);
+    }
 }

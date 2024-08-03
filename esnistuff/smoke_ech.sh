@@ -5,6 +5,9 @@
 
 # set -x
 
+mkdir hellos
+(cd hellos; ../test/echcorrupttest)
+
 # structure is host:port mapped to pathname
 declare -A targets=(
     [my-own.net]="ech-check.php"
@@ -71,6 +74,7 @@ digcmd="dig https"
 
 NOW=$(whenisitagain)
 
+BASEDIR=$(pwd)
 cd $TMPD
 
 logfile=$TMPD/$NOW.log
@@ -105,8 +109,10 @@ then
     digcmd="dig -t TYPE65"
 fi
 
-if [[ "$allgood" == "yes" ]]
-then
+#if [[ "$allgood" == "yes" ]]
+#then
+for ech in "$BASEDIR/hellos/"*
+do
     for targ in "${!targets[@]}"
     do
         host=$(hostport2host $targ)
@@ -123,7 +129,7 @@ then
         then
             qname="_$port._https.$host"
         fi
-        echo "Checking $host:$port/$path and $wkurl" >>$logfile
+        echo "Checking $host:$port/$path and $wkurl with client hello $ech" >>$logfile
         # get wkurl
         if [[ "$host" != "crypto.cloudflare.com" && "$host" != "tls-ech.dev" ]]
         then
@@ -140,7 +146,7 @@ then
         # grab DNS
         $digcmd $qname >$host.$port.dig 2>&1
         # try ECH 
-        timeout $tout $echcli -H $host -p $port $pathstr -d >$host.$port.echcli.log
+        ECH_ENCODED_INNER="$ech" timeout $tout $echcli -H $host -p $port $pathstr -d >$host.$port.echcli.log
         eres=$?
         if [[ "$eres" == "124" ]] 
         then
@@ -153,7 +159,8 @@ then
             echo "Error ($eres) from echcli.sh for $host:$port/$path" >>$logfile
         fi
     done
-fi
+done
+#fi
 
 END=$(whenisitagain)
 echo "Finished $0 at $END"  >>$logfile

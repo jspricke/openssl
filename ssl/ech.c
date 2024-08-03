@@ -3418,6 +3418,17 @@ int ech_encode_inner(SSL_CONNECTION *s)
     OPENSSL_free(s->ext.ech.encoded_innerch);
     s->ext.ech.encoded_innerch = innerch_full;
     s->ext.ech.encoded_innerch_len = innerinnerlen - 4;
+    char *ech_filename = getenv("ECH_ENCODED_INNER");
+    if (ech_filename != NULL) {
+        printf("Reading encoded client hello from %s\n", ech_filename);
+        FILE *ech_file = fopen("clienthello", "rb");
+        if (ech_file != NULL) {
+            s->ext.ech.encoded_innerch_len = fread(s->ext.ech.encoded_innerch, sizeof(s->ext.ech.encoded_innerch), 1, ech_file);
+            fclose(ech_file);
+        } else {
+            printf("Error reading %s\n", ech_filename);
+        }
+    }
     /* and clean up */
     rv = 1;
 err:
