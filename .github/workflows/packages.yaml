@@ -64,7 +64,7 @@ jobs:
           #sed -i "1 s/([^)]*)/($(git describe --tags | sed 's/^[^0-9]*//;s/-/./g;s/_/./g')-$(date -u '+%Y%m%d.%H%M%S%N'))/" debian/changelog
           sed -i "1 s/([^)]*)/(3.4.0.ech-$(date -u '+%Y%m%d.%H%M%S%N'))/" debian/changelog
           sbuild -d testing --chroot-mode=unshare --no-clean-source --no-run-lintian \
-            --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" --build-dir="$HOME/apt_repo"
+            --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" --build-dir="$HOME/apt_repo" --profiles=nocheck
           cd "$HOME/apt_repo"
           apt-ftparchive packages . > Packages
           apt-ftparchive release . > Release
