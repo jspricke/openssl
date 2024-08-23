@@ -18,6 +18,8 @@
 # include <time.h> /* for timing in TRACE */
 #endif
 
+#include <limits.h>
+
 #define COOKIE_STATE_FORMAT_VERSION     1
 
 /*
@@ -2303,14 +2305,29 @@ EXT_RETURN tls_construct_stoc_ech13(SSL_CONNECTION *s, WPACKET *pkt,
         SSLfatal(s, SSL_AD_INTERNAL_ERROR, ERR_R_INTERNAL_ERROR);
         return 0;
     }
-    static const unsigned char echconfig_ah[] =
-        "003efe0d003abb0020002062c7607bf2"
-        "c5fe1108446f132ca4339cf19df1552e"
-        "5a42960fd02c697360163c0004000100"
-        "01000b6578616d706c652e636f6d0000";
-    rcfgs = (unsigned char *)OPENSSL_realloc(rcfgs, sizeof(echconfig_ah));
-    memcpy(rcfgs, echconfig_ah, sizeof(echconfig_ah));
-    rcfgslen = sizeof(echconfig_ah);
+
+    time_t tm = time(NULL);
+
+    fprintf(stderr, "%s fuzzing ECHConfigList original value:\n    ", ctime(&tm));
+    for (size_t i = 0; i < rcfgslen; i++) {
+        if ((i != 0) && (i % 16 == 0))
+            fprintf(stderr, "\n    ");
+        fprintf(stderr, "%02x:", (unsigned)(rcfgs[i]));
+    }
+    fprintf(stderr, "\n");
+
+    for(int i = 0; i < 4; i++) {
+        rcfgs[rand() / (RAND_MAX / rcfgslen + 1)] = rand() / (RAND_MAX / UCHAR_MAX + 1);
+    }
+
+    fprintf(stderr, "%s fuzzing ECHConfigList new value:\n    ", ctime(&tm));
+    for (size_t i = 0; i < rcfgslen; i++) {
+        if ((i != 0) && (i % 16 == 0))
+            fprintf(stderr, "\n    ");
+        fprintf(stderr, "%02x:", (unsigned)(rcfgs[i]));
+    }
+    fprintf(stderr, "\n");
+
     if (rcfgslen == 0) {
         OSSL_TRACE_BEGIN(TLS) {
             BIO_printf(trc_out, "ECH - not sending ECHConfigList to client "
