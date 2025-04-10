@@ -12,6 +12,7 @@ include /usr/share/dpkg/architecture.mk
 include /usr/share/dpkg/pkg-info.mk
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all future=+lfs
+export DEB_CFLAGS_MAINT_APPEND = -Werror
 
 SHELL=/bin/bash
 
