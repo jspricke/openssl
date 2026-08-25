@@ -1,0 +1,196 @@
+Format: 1.0
+Source: openssl
+Binary: libcrypto4-udeb libssl-dev libssl-doc libssl4 libssl4-dbgsym libssl4-udeb openssl openssl-dbgsym openssl-provider-fips openssl-provider-fips-dbgsym openssl-provider-legacy openssl-provider-legacy-dbgsym
+Architecture: all amd64
+Version: 1:4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843
+Checksums-Md5:
+ d601145830b2d5df0399d581d499f2f1 2080628 libcrypto4-udeb_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.udeb
+ 6dba6f8ecaf88b17044fda5ae59cce44 3061140 libssl-dev_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 48b5627a630ff465ce8cd971979d0bab 2349216 libssl-doc_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_all.deb
+ 70a128508c179cbe541c138af7e2d881 6361096 libssl4-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 61f80aefc58b1c4893d842f53cac9c08 410928 libssl4-udeb_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.udeb
+ 81ea880b768927447a951ff89c3e9eb2 2482172 libssl4_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ edfd3113d07f79e45cec2e9fd9699688 777556 openssl-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 7c50d496af3b7f981b96bdbff147eb3f 1984032 openssl-provider-fips-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 5ae4d7534022252da380f788921e4a5e 1178156 openssl-provider-fips_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ ff9488e81076e62fe6510af2463a7e8f 105444 openssl-provider-legacy-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ e22a44b6617bbcae9674ab0d9064206e 331812 openssl-provider-legacy_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ a6dabba7345ac817e2a1c02a6899a5e9 1587708 openssl_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+Checksums-Sha1:
+ 35a84bded2723ff3894bed7730ec297cba1c8774 2080628 libcrypto4-udeb_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.udeb
+ 50eb86d64e43a6cd497478262406a24ce31893f4 3061140 libssl-dev_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 6fa83538ceb4c39afa9fba841b3a3f4ebc101ffe 2349216 libssl-doc_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_all.deb
+ f76042692bfcf1abe72d2cf0181d592dbfa3353c 6361096 libssl4-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ fe2ef18018ec18ae9bf9a7bb2ce06090a39e48cf 410928 libssl4-udeb_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.udeb
+ ac454ae2473a9357e75b1c69e358fe81bd94aab9 2482172 libssl4_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 838968500f12f8726e6986e298d075065443a812 777556 openssl-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ fbeb4770808e7162d529781e3be6d0b31ae8cce5 1984032 openssl-provider-fips-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 475db878c796f5b3cb9a9195f1b5a944570c4e7a 1178156 openssl-provider-fips_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 7b92eaa266d0bd13dacc293fc96f7366f3860df7 105444 openssl-provider-legacy-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 8f3ce1b45cd5423088ca3edbe9b01e1d1d027830 331812 openssl-provider-legacy_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 9ba1f193b5743ad04805d785efff4f3b6ac17281 1587708 openssl_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+Checksums-Sha256:
+ 627ab0ad7f5d5ec0a745a9563cd6afc81a9f2f8c9071373c6575c4b0c2641cbc 2080628 libcrypto4-udeb_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.udeb
+ ade366960edd0f248bc20c902ab0fc3243575894084e1cd54bd6b32ebf022a5c 3061140 libssl-dev_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 4ccbaa54519a53113f4a8bdcaa8ea1016c04401d62663b3378a3ba47f986ec8c 2349216 libssl-doc_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_all.deb
+ f3a081ea5c1ed06efcdab4f582def97c536b2aff7e61faa1dce9e413bf39b3e4 6361096 libssl4-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ b5bfb715e54991ce51552b5f00e00192d6585aed3d2500d204055e301853194d 410928 libssl4-udeb_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.udeb
+ aaf57785834ce6409b6aca473ae685927420ce7ad25715212b2c859a41047378 2482172 libssl4_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 7c77ada66fe329fd0c7a01bf43c5b1264697a4572b1626534d37f2e9ecbd63ae 777556 openssl-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 00a7c6e9c6a8aa2e7f77d9082d5ea3ec9f2977ba1df3a8414a2feec23cbe798c 1984032 openssl-provider-fips-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 8e240bba12013ed849a04829236bf0c1fe212b3b5f3110dc8f16a3277b177f47 1178156 openssl-provider-fips_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 79403211ca04a0e7646534f6ad92c45a12c50637078edcca92f516c27bc0051c 105444 openssl-provider-legacy-dbgsym_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ 9b03a0de95f9c083f6954128b3fc2d506e6b50c851f303d2f976c59b4be5bd0f 331812 openssl-provider-legacy_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+ c1c38f0358f35b9689cf80b7ef588f91878b7b7164b075abbef3fd10e3415813 1587708 openssl_4.0.POST.CLANG.FORMAT.WEBKIT.2092.g2bbbeef743-20260825.135850530605843_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Tue, 25 Aug 2026 14:14:42 +0000
+Build-Path: /build/package/package
+Installed-Build-Depends:
+ autoconf (= 2.73-2),
+ automake (= 1:1.18.1-4),
+ autopoint (= 1.0-3),
+ autotools-dev (= 20240727.1+nmu1),
+ base-files (= 14.2),
+ base-passwd (= 3.6.8),
+ bash (= 5.3-3+b1),
+ binutils (= 2.47-2),
+ binutils-common (= 2.47-2),
+ binutils-x86-64-linux-gnu (= 2.47-2),
+ bsdextrautils (= 2.42.2-2),
+ build-essential (= 12.12),
+ bzip2 (= 1.0.8-6+b2),
+ coreutils (= 9.10-1),
+ cpp (= 4:15.2.0-5),
+ cpp-15 (= 15.3.0-2),
+ cpp-15-x86-64-linux-gnu (= 15.3.0-2),
+ cpp-x86-64-linux-gnu (= 4:15.2.0-5),
+ dash (= 0.5.12-12),
+ debconf (= 1.5.92),
+ debhelper (= 14.3),
+ debianutils (= 5.23.2),
+ dh-autoreconf (= 22),
+ dh-strip-nondeterminism (= 1.15.1-1),
+ diffutils (= 1:3.12-1),
+ dpkg (= 1.23.7),
+ dpkg-dev (= 1.23.7),
+ dwz (= 0.17-1),
+ file (= 1:5.47-4),
+ findutils (= 4.11.0-2),
+ g++ (= 4:15.2.0-5),
+ g++-15 (= 15.3.0-2),
+ g++-15-x86-64-linux-gnu (= 15.3.0-2),
+ g++-x86-64-linux-gnu (= 4:15.2.0-5),
+ gcc (= 4:15.2.0-5),
+ gcc-15 (= 15.3.0-2),
+ gcc-15-base (= 15.3.0-2),
+ gcc-15-x86-64-linux-gnu (= 15.3.0-2),
+ gcc-16-base (= 16.2.0-1),
+ gcc-x86-64-linux-gnu (= 4:15.2.0-5),
+ gettext (= 1.0-3),
+ gettext-base (= 1.0-3),
+ grep (= 3.12-1),
+ groff-base (= 1.24.1-1),
+ gzip (= 1.14-1),
+ hostname (= 3.25),
+ init-system-helpers (= 1.69+nmu1),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.4.0-1),
+ libarchive-zip-perl (= 1.68-1),
+ libasan8 (= 16.2.0-1),
+ libatomic1 (= 16.2.0-1),
+ libattr1 (= 1:2.6.0-1),
+ libaudit-common (= 1:4.1.2-1),
+ libaudit1 (= 1:4.1.2-1+b1),
+ libbinutils (= 2.47-2),
+ libblkid1 (= 2.42.2-2),
+ libbz2-1.0 (= 1.0.8-6+b2),
+ libc-bin (= 2.43-3),
+ libc-dev-bin (= 2.43-3),
+ libc-gconv-modules-extra (= 2.43-3),
+ libc6 (= 2.43-3),
+ libc6-dev (= 2.43-3),
+ libcap-ng0 (= 0.9.3-1+b1),
+ libcc1-0 (= 16.2.0-1),
+ libcrypt1 (= 1:4.5.2+20251210-1),
+ libctf-nobfd0 (= 2.47-2),
+ libctf0 (= 2.47-2),
+ libdb5.3t64 (= 5.3.28+dfsg2-11+b1),
+ libdebconfclient0 (= 0.283),
+ libdebhelper-perl (= 14.3),
+ libdpkg-perl (= 1.23.7),
+ libelf1t64 (= 0.195-1),
+ libfile-stripnondeterminism-perl (= 1.15.1-1),
+ libgcc-15-dev (= 15.3.0-2),
+ libgcc-s1 (= 16.2.0-1),
+ libgdbm-compat4t64 (= 1.26-1+b2),
+ libgdbm6t64 (= 1.26-1+b2),
+ libgmp10 (= 2:6.3.0+dfsg-5+b2),
+ libgomp1 (= 16.2.0-1),
+ libgprofng0 (= 2.47-2),
+ libhwasan0 (= 16.2.0-1),
+ libisl23 (= 0.28-1),
+ libitm1 (= 16.2.0-1),
+ libjansson4 (= 2.15.1-1),
+ liblsan0 (= 16.2.0-1),
+ liblzma5 (= 5.8.3-1),
+ libmagic-mgc (= 1:5.47-4),
+ libmagic1t64 (= 1:5.47-4),
+ libmd0 (= 1.2.0-2),
+ libmount1 (= 2.42.2-2),
+ libmpc3 (= 1.3.1-3),
+ libmpfr6 (= 4.2.2-3),
+ libpam-modules (= 1.7.0-8),
+ libpam-modules-bin (= 1.7.0-8),
+ libpam-runtime (= 1.7.0-8),
+ libpam0g (= 1.7.0-8),
+ libpcre2-8-0 (= 10.46-1+b2),
+ libperl5.42 (= 5.42.3-1),
+ libpipeline1 (= 1.5.8-3),
+ libquadmath0 (= 16.2.0-1),
+ libseccomp2 (= 2.6.1-1),
+ libselinux1 (= 3.11-2),
+ libsframe3 (= 2.47-2),
+ libsmartcols1 (= 2.42.2-2),
+ libssl3t64 (= 3.6.3-1),
+ libstdc++-15-dev (= 15.3.0-2),
+ libstdc++6 (= 16.2.0-1),
+ libsystemd0 (= 261.2-1),
+ libtinfo6 (= 6.6+20260608-2),
+ libtool (= 2.5.4-11),
+ libtsan2 (= 16.2.0-1),
+ libubsan1 (= 16.2.0-1),
+ libuchardet0 (= 0.0.8-2+b2),
+ libudev1 (= 261.2-1),
+ libunistring5 (= 1.4.2-1),
+ libuuid1 (= 2.42.2-2),
+ libxml2-16 (= 2.15.3+dfsg-1),
+ libzstd-dev (= 1.5.7+dfsg-4),
+ libzstd1 (= 1.5.7+dfsg-4),
+ linux-libc-dev (= 7.1.8-2),
+ m4 (= 1.4.21-1),
+ make (= 4.4.1-3),
+ man-db (= 2.13.1-1),
+ mawk (= 1.3.4.20260302-1),
+ ncurses-base (= 6.6+20260608-2),
+ ncurses-bin (= 6.6+20260608-2),
+ openssl-provider-legacy (= 3.6.3-1),
+ patch (= 2.8-2),
+ perl (= 5.42.3-1),
+ perl-base (= 5.42.3-1),
+ perl-modules-5.42 (= 5.42.3-1),
+ po-debconf (= 1.0.22),
+ sed (= 4.9-3),
+ sensible-utils (= 0.0.26),
+ sysvinit-utils (= 3.18-1),
+ tar (= 1.35+dfsg-5),
+ util-linux (= 2.42.2-2),
+ xz-utils (= 5.8.3-1),
+ zlib1g (= 1:1.3.dfsg+really1.3.2-3),
+ zlib1g-dev (= 1:1.3.dfsg+really1.3.2-3)
+Environment:
+ DEB_BUILD_OPTIONS="parallel=4"
+ LANG="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LC_CTYPE="C.UTF-8"
+ SOURCE_DATE_EPOCH="1754480829"
